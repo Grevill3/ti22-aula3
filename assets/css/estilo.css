@@ -1,0 +1,65 @@
+/* Seletor universal (p/ pag. toda) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 1600px;
+    margin-top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: #8C4FF3;
+}
+
+h3{
+    color: #8C4FF3;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+img {
+    margin-left: 5%;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* seletor de classe */
+.art2{
+    width: 30%;
+    margin-left: 0;
+    margin-right: 3%;
+    float: left;
+}
+
+/* seletor de ID */
+#art1{
+    width: 66%;
+    float: left;
+}
+
+/* media queries possui um ponto de quebra - para o tamanho maximo de 600px */
+@media (min-width: 400px) and (max-width: 600px)
+    {
+        main {max-width: 600px;}
+        body {background-color: #1E90FF;}
+        img {display: none;}
+
+        h1,h3 {color: white;}
+        section {width: 100%; margin: 0 auto;}
+        #art1, .art2 {width: 100%; margin: 0 2%;
+                      clear: both;
+                      padding: 15px;}
+
+        #art1, #art3 {background-color: #8844EE;}
+    }
